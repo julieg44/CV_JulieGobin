@@ -47,6 +47,7 @@ aside{
     width: 30%;
     background: linear-gradient(to top, #071725, 20%, #0F4C81);
     position: relative;
+    order: 1;
 }
 
 
@@ -103,15 +104,16 @@ aside h1{
 
 
 section{
+    box-sizing: border-box;
     width: 70%;
     padding-left: 3%;
-    padding-left: 5%;
+    order: 2;
 }
 
 /*entete identité*/
 
 section header{
-    margin-bottom: 18%;
+    margin-bottom: 20%;
     margin-top: 13%;
 }
 
@@ -245,6 +247,99 @@ article{
 
 
 /*image uniquement petit format*/
-section img{
+section #identite_petit{
     display: none;
+}
+
+
+/*responsive mobiles*/
+
+@media all and (max-width : 980px){
+
+    #wrap{
+        display: block;
+    }
+
+    section{
+        order: 1;
+        width: 100%;
+        padding-left: 0%;
+    }
+
+
+    section header{
+        
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0%;
+        display: flex;
+        background-color: #0F4C81;
+    }
+
+    section header h1, h2{
+        color: #ffffff;
+    }
+
+    #julie{
+        color: #B5C7D3;
+    }
+
+    #filet{
+        background-color: #B5C7D3;
+    }
+
+    section #identite_petit{
+        display: block;
+        width: 30%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    section #identite{
+        width: 60%;
+    }
+
+    section #identite_petit img{
+        width: 100%;
+    }
+
+    article{
+        padding-left: 3%;
+    }
+
+    .titre {
+        margin-bottom: 5%;
+        margin-top: 15%;
+    }
+   
+
+    .ligne{
+        display: block;
+    }
+
+    .contenu{
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .collegue{
+        margin-bottom: 10%;
+    }
+
+
+    aside{
+        width: 100%;
+        order: 2;
+    }
+
+    aside #photo{
+        display: none;
+    }
+
+    #loisirs{
+        position: relative;
+    }
+
+
+
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=480" />
     <link rel="stylesheet" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/779ac07472.js" crossorigin="anonymous"></script>
@@ -10,49 +11,20 @@
 <body>
     <div id="wrap">
         
-        <!-- partie gauche -->
-        <aside>
-            <div id="photo">
-                <p>
-               <img src="image/juliegobin.png" alt="photo_identite"/>
-                </p>
-            </div>
-            <div id="contact">
-                <h1>Contact</h1>
-                <p>10 avenue des Floralies<br/>
-                44800 Saint Herblain</p>
-                <p>Email<br/>
-                julie.gobin1106@gmail.com</p>
-                <p>Site Web<br/>
-                à venir</p>
-            </div>
-            <div id="propos">
-                <h1>À propos de moi</h1>
-                <p>Graphiste de formation initiale, et ayant donc l'habitude de travailler sur des maquettes de projets web, je suis attirée depuis longtemps par "l'envers du décors" et me suis lancée d'abord de manière autodidacte il y a quelques années sur l'apprentissage de l'intégration. Souhaitant en faire un véritable atout et suite au dépôt de bilan de l'agence dans laquelle j'exercais, j'ai décidé de débuter la formation développeur web d'Openclassrooms. J'espère ainsi proposer de gérer de manière autonome des projets de leur mise en forme graphique à leur déploiement technique.</p>
-
-            </div>
-            <div id="loisirs">
-                <h1>Loisirs</h1>
-                    <div class="icon">
-                        <i class="fas fa-palette"></i></div>
-                    <div class="icon">
-                        <i class="fas fa-music"></i></div>
-                    <div class="icon">
-                        <i class="fas fa-plane"></i></div>
-                    <div class="icon">
-                        <i class="fas fa-glass-cheers"></i></div>
-            </div>
-            
-        </aside>
-
+       
         <!-- corps-->
         <section>
             <header>
+                <!--image ne doit s'afficher qu'en responsive-->
+                <div id="identite_petit">
+                <img src="image/juliegobin.png"/>
+                </div>
+                <div id="identite">
                 <h1><span id="julie">Julie</span> Gobin</h1>
                 <h2>Graphiste et développeur en formation</h2>
                 <div id="filet"></div>
-                <!--image ne doit s'afficher qu'en responsive-->
-                <img src="image/juliegobin.png"/>
+                </div>
+
             </header>
 
                 <!--bloc Formation-->          
@@ -176,6 +148,41 @@
                     </div>    
                 </article>
         </section>
+         <!-- partie gauche -->
+         <aside>
+            <div id="photo">
+                <p>
+               <img src="image/juliegobin.png" alt="photo_identite"/>
+                </p>
+            </div>
+            <div id="contact">
+                <h1>Contact</h1>
+                <p>10 avenue des Floralies<br/>
+                44800 Saint Herblain</p>
+                <p>Email<br/>
+                julie.gobin1106@gmail.com</p>
+                <p>Site Web<br/>
+                à venir</p>
+            </div>
+            <div id="propos">
+                <h1>À propos de moi</h1>
+                <p>Graphiste de formation initiale, et ayant donc l'habitude de travailler sur des maquettes de projets web, je suis attirée depuis longtemps par "l'envers du décors" et me suis lancée d'abord de manière autodidacte il y a quelques années sur l'apprentissage de l'intégration. Souhaitant en faire un véritable atout et suite au dépôt de bilan de l'agence dans laquelle j'exercais, j'ai décidé de débuter la formation développeur web d'Openclassrooms. J'espère ainsi proposer de gérer de manière autonome des projets de leur mise en forme graphique à leur déploiement technique.</p>
+
+            </div>
+            <div id="loisirs">
+                <h1>Loisirs</h1>
+                    <div class="icon">
+                        <i class="fas fa-palette"></i></div>
+                    <div class="icon">
+                        <i class="fas fa-music"></i></div>
+                    <div class="icon">
+                        <i class="fas fa-plane"></i></div>
+                    <div class="icon">
+                        <i class="fas fa-glass-cheers"></i></div>
+            </div>
+            
+        </aside>
+
 </div>
 </body>
 </html>
