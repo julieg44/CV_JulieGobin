@@ -254,7 +254,7 @@ section #identite_petit{
 
 /*responsive mobiles*/
 
-@media all and (max-width : 980px){
+@media all and (max-width : 480px){
 
     #wrap{
         display: block;
