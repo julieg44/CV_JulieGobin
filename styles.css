@@ -190,6 +190,10 @@ article{
     display: flex;
 }
 
+.ligne_collegue{
+    display: flex;
+}
+
 .dates{
     width: 33%;
     display: flex;
@@ -234,6 +238,16 @@ article{
     margin-bottom: 0;
 }
 
+.ligne_collegue{
+    margin-bottom: 35px;
+}
+
+.ligne_collegue p{
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .collegue{
     width: 50%;
 }
@@ -253,12 +267,56 @@ section #identite_petit{
 }
 
 
+/*responsive tablettes*/
+
+@media all and (min-width : 488px) and (max-width:768px){
+
+    .ligne{
+        display: block;
+    }
+
+    .titre{
+        margin-bottom: 5%;
+    }
+
+    .dates{
+        width: 100%;
+    }
+
+    .contenu{
+        width: 100%;
+        padding-left: 4%;
+        margin-top: 1%;
+    }
+
+    .ligne_collegue{
+        display: flex;
+    }
+
+    .icon {
+        
+        padding-top: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 15px;
+    }
+
+  
+}
+
+
+
+
 /*responsive mobiles*/
 
 @media all and (max-width : 480px){
 
     #wrap{
         display: block;
+    }
+
+    p{
+        font-size: 1em;
     }
 
     section{
@@ -294,6 +352,7 @@ section #identite_petit{
         width: 30%;
         margin-right: 5%;
         margin-left: 5%;
+        margin-top: 10%;
     }
 
     section #identite{
@@ -316,12 +375,29 @@ section #identite_petit{
 
     .ligne{
         display: block;
+        margin-bottom: 10%;
+    }
+
+    .ligne_collegue{
+        display: block;
+        margin-bottom: 10%;
     }
 
     .contenu{
         margin-top: 1%;
         margin-left: 5%;
+        width: 100%;
     }
+    
+    .dates{
+        width:100% ;
+    }
+
+    .dates p{
+        color: #0F4C81;
+    }
+
+    
     
     .collegue{
         margin-bottom: 10%;
